@@ -1,0 +1,13 @@
+package com.ma;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class MariaAntonietaApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(MariaAntonietaApplication.class, args);
+	}
+
+}
