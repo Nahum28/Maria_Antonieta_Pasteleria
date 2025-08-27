@@ -5,6 +5,9 @@ import org.springframework.web.bind.annotation.*;
 
 import com.ma.beans.Trabajador;
 import com.ma.services.TrabajadorService;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
 
 @RestController
 @RequestMapping("/api/trabajadores")
@@ -18,4 +21,9 @@ public class TrabajadorController {
         trabajadorService.guardar(trabajador);
         return "Trabajador insertado correctamente";
     }
+    @GetMapping("/{id}")
+    public Trabajador getMethodName(@RequestParam Integer id) {
+        return  trabajadorService.buscarPorId(id);
+    }
+    
 }

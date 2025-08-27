@@ -1,5 +1,6 @@
 package com.ma.beans;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 public class Trabajador {
@@ -7,7 +8,7 @@ public class Trabajador {
     private String apellido;
     private String email;
     private String telefono;
-    private Date fechaContratacion;
+    private LocalDate fechaContratacion;
     private int edad;
 	public String getNombre() {
 		return nombre;
@@ -33,10 +34,10 @@ public class Trabajador {
 	public void setTelefono(String telefono) {
 		this.telefono = telefono;
 	}
-	public Date getFechaContratacion() {
+	public LocalDate getFechaContratacion() {
 		return fechaContratacion;
 	}
-	public void setFechaContratacion(Date fechaContratacion) {
+	public void setFechaContratacion(LocalDate fechaContratacion) {
 		this.fechaContratacion = fechaContratacion;
 	}
 	public int getEdad() {

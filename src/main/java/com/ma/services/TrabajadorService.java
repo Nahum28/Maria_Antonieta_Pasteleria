@@ -4,4 +4,6 @@ import com.ma.beans.Trabajador;
 
 public interface TrabajadorService {
     void guardar(Trabajador trabajador);
+
+	Trabajador buscarPorId(Integer id);
 }
